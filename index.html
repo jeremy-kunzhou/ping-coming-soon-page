@@ -7,7 +7,9 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | Ping coming soon page</title>
-
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js"></script>
+  <script src="https://kit.fontawesome.com/9a24d05a58.js" crossorigin="anonymous"></script>
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution { font-size: 11px; text-align: center; }
@@ -15,19 +17,40 @@
   </style>
 </head>
 <body>
-
-  We are launching soon!
-
-  Subscribe and get notified
-
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
-
-  <footer>
+  <main>
+    <div class="logo">
+      <img src="./images/logo.svg" alt="PING">
+    </div>
+    <h1>We are launching <span>soon!</span></h1>
+    <h2>Subscribe and get notified</h2>
+    <div class="notify">
+      <form>
+        <div class="notify-email-input">
+          <input type="email" name="email" id="email" placeholder="Your email address">
+          <p class="email-error"></p>
+        </div>
+        <a href="#" class="notify-button"><p>Notify Me</p></a>
+      </form>
+    </div>
+    <div class="bottom">
+      <img src="./images/illustration-dashboard.png" alt="dashboard">
+      <div class="footer">
+        <div class="social-button">
+          <a href="#" ><i class="fab fa-facebook-f"></i></a>
+          <a href="#" ><i class="fab fa-twitter"></i></a>
+          <a href="#" ><i class="fab fa-instagram"></i></a>
+        </div>
+        <div class="copyright">
+          <p>  &copy; Copyright Ping. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer style="margin-top: 20px">
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">Jeremy Zhou</a>.
     </p>
   </footer>
 </body>
